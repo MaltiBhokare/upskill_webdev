@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentors - Virtual Mentorship Hub</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Custom styles */
+    /* Navbar styles */
+    .navbar {
+      background-color: #343a40 !important;
+    }
+    .navbar-brand {
+      color: #ffffff !important;
+    }
+    .navbar-nav .nav-link {
+      color: #ffffff !important;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #cccccc !important;
+    }
+    
+    /* Main content styles */
+    .main-content {
+      margin-top: 80px;
+      background-color:snow;
+      
+    }
+    .main-content h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .feature-section {
+      margin-bottom: 50px;
+    }
+    .feature-section h2 {
+      font-size: 24px;
+      color: #343a40;
+      margin-bottom: 10px;
+    }
+    .feature-section p {
+      font-size: 16px;
+      color: #6c757d;
+    }
+    .mentor-profile {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .mentor-profile h3 {
+      margin-top: 0;
+    }
+    .rating {
+      color: #ffc107;
+    }
+    .mentor-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 50%;
+    }
+    body{
+      background-color: lightcyan;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Virtual Mentorship Hub</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="aboutus.html">About Us</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="mentors.html">Mentors <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mentees.html">Mentees</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container main-content">
+    <h1 class="text-center mb-4">Find Your Mentor</h1>
+    
+    <!-- Browse/Search Functionality -->
+    <div class="feature-section">
+      <h2>Search Mentors</h2>
+      <p>Use our search bar to explore available mentors matching your criteria.</p>
+      <input type="text" class="form-control mb-3" placeholder="Enter keywords to search">
+      <button class="btn btn-primary">Search</button>
+    </div>
+    
+    <!-- Filters -->
+    <div class="feature-section">
+      <h2>Filters</h2>
+      <p>Your mentor selection with filters:</p>
+      <div class="form-group">
+        <label for="expertise">Expertise:</label>
+        <select class="form-control" id="expertise">
+          <option>Programming</option>
+          <option>Marketing</option>
+          <option>Finance</option>
+          <!-- Add more options as needed -->
+        </select>
+      </div>
+      <!-- Add more filter options as needed -->
+      <button class="btn btn-primary">Apply Filters</button>
+    </div>
+    
+    <!-- Mentor Profiles -->
+    <div class="feature-section">
+      <h2>Mentor Profiles</h2>
+      <div class="mentor-profile">
+        <img src="test4.jpg" alt="John Doe" class="mentor-image">
+        <h3>Jane Smith</h3>
+        <p>Experience: 10 years</p>
+        <p>Skills: Leadership, Communication, Problem Solving</p>
+        <p>Areas of Expertise: Business Strategy, Team Management</p>
+        <p><span class="rating">&#9733;&#9733;&#9733;&#9733;&#9734;</span> (4.0)</p>
+        <hr>
+        <h4>Reviews:</h4>
+        <p><strong>Great mentorship!</strong></p>
+        <p>John provided valuable insights and helped me overcome challenges in my career.</p>
+        <p>Rating: <span class="rating">&#9733;&#9733;&#9733;&#9733;&#9733;</span> (5.0)</p>
+      </div>
+      <div class="mentor-profile">
+        <img src="test3.jpg" alt="Jane Smith" class="mentor-image">
+        <h3>John Doe</h3>
+        <p>Experience: 8 years</p>
+        <p>Skills: Programming, Data Analysis, Machine Learning</p>
+        <p>Areas of Expertise: Software Development, Data Science</p>
+        <p><span class="rating">&#9733;&#9733;&#9733;&#9733;&#9733;</span> (5.0)</p>
+        <hr>
+        <h4>Reviews:</h4>
+        <p><strong>Excellent mentor!</strong></p>
+        <p>Jane's guidance was instrumental in my career growth. Highly recommended.</p>
+        <p>Rating: <span class="rating">&#9733;&#9733;&#9733;&#9733;&#9733;</span> (5.0)</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+    <p>&copy; 2024 Virtual Mentorship Hub</p>
+  </footer>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

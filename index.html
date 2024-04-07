@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual Mentorship Hub</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Custom styles */
+    .jumbotron {
+      background-image: url('background-image.jpg'); /* Replace with your background image URL */
+      background-size: cover;
+      color: black;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+    .testimonial {
+      background-color: #faadd7;
+      padding: 30px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    .testimonial img {
+      width: 50px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    
+    /* body{
+      background-color: lightcyan;
+    } */
+    
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Virtual Mentorship Hub</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="aboutus.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Mentors</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Mentees</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="jumbotron text-center">
+    <h1 class="display-4">Welcome to the Virtual Mentorship Hub</h1>
+    <p class="lead">Connecting mentors and mentees for personal and professional growth</p>
+    <hr class="my-4">
+    <p> Features:</p>
+    <ul class="list-unstyled">
+      <li>Easy mentor/mentee search</li>
+      <li>Seamless communication tools</li>
+    </ul>
+    <a class="btn btn-primary btn-lg" onclick="window.open('signup_mentor.php','_self')" role="button">Sign Up as a Mentor</a>
+    <a class="btn btn-success btn-lg" onclick="window.open('signup_mentees.php','_self')" role="button">Sign Up as a Mentee</a>
+  </div>
+
+  <!-- Testimonials Section -->
+  <div class="container">
+    <h2 class="text-center mb-4">Testimonials</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="testimonial">
+          <img src="test1.jpg" alt="Testimonial 1">
+          <p class="mb-0">"The Virtual Mentorship Hub helped me find a mentor who guided me through a challenging career transition. I'm grateful for the support I received."</p>
+          <p><strong>Brittany Wells</strong></p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="testimonial">
+          <img src="test2.jpg" alt="Testimonial 2">
+          <p class="mb-0">"As a mentor on this platform, I've had the opportunity to share my knowledge and expertise with eager mentees. It's been a rewarding experience."</p>
+          <p><strong>Jane Smith</strong></p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="testimonial">
+          <img src="test5.jpg" alt="Testimonial 3">
+          <p class="mb-0">"I've gained valuable insights and advice from my mentor on the Virtual Mentorship Hub. It has been my personal and professional growth."</p>
+          <p><strong>Alice Johnson</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mentorship Process Section -->
+  <div id="signup" class="container text-center mt-5">
+    <h2>Brief Overview of the Mentorship Process</h2>
+    <p>Our platform facilitates meaningful connections between mentors and mentees. Here's how it works:</p>
+    <ol class="lead">
+      <li>Create an account as a mentor or mentee</li>
+      <li>Complete your profile with relevant information</li>
+      <li>Search for mentors/mentees based on your needs and interests</li>
+      <li>Connect with a suitable mentor/mentee and start your mentorship journey</li>
+      <li>Utilize our communication tools to exchange knowledge and guidance</li>
+    </ol>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+    <p>&copy; 2024 Virtual Mentorship Hub</p>
+  </footer>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
